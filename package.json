@@ -11,6 +11,9 @@
     "postinstall": "rm -rf ios/Pods && (cd ios && pod install)"
   },
   "dependencies": {
+    "appcenter": "^4.3.0",
+    "appcenter-analytics": "^4.3.0",
+    "appcenter-crashes": "^4.3.0",
     "react": "16.13.1",
     "react-native": "0.63.4"
   },
