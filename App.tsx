@@ -24,7 +24,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+declare const global: {HermesInternal: null | {}};
+
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
