@@ -5,6 +5,8 @@ import Feather from 'react-native-vector-icons/Feather';
 
 import HomeScreen from '../Screens/HomeScreen/Home.screen';
 import StockScreen from '../Screens/StockScreen/StockScreen';
+import CashflowScreen from '../Screens/CashflowScreen/Cashflow.scree';
+import ProfileScreen from '../Screens/ProfileScreen/Profile.screen';
 
 const Tab = createBottomTabNavigator();
 
@@ -48,8 +50,8 @@ const Root = () => {
     >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Stock" component={StockScreen} />
-      <Tab.Screen name="Cashflow" component={StockScreen} />
-      <Tab.Screen name="Profile" component={StockScreen} />
+      <Tab.Screen name="Cashflow" component={CashflowScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
 }
