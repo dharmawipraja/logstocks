@@ -15,7 +15,10 @@
     "appcenter-analytics": "^4.3.0",
     "appcenter-crashes": "^4.3.0",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-camera": "^4.2.1",
+    "react-native-permissions": "^3.0.5",
+    "react-native-qrcode-scanner": "^1.5.4"
   },
   "devDependencies": {
     "@babel/core": "7.8.4",
