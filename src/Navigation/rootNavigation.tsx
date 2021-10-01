@@ -8,17 +8,26 @@ import StockScreen from '../Screens/StockScreen/StockScreen';
 
 const Tab = createBottomTabNavigator();
 
-const icon = {
-  'Home': 'home',
-  'Stock': 'archive',
-  'Cashflow': 'activity',
-  'Profile': 'user'
+interface Opts {
+  color: string
 }
 
-const _getIcon = (opts, route) => {
+interface Route {
+  name: string
+}
+
+const icons = {
+  Home: 'home',
+  Stock: 'archive',
+  Cashflow: 'activity',
+  Profile: 'user'
+}
+
+const _getIcon = (opts: Opts, route: Route) => {
   const { color } = opts;
   const { name } = route;
-  const iconName = icon[name]
+  // @ts-ignore
+  const iconName = icons[name]
 
   return (
     <View style={{ marginBottom: -5 }}>
